@@ -1,8 +1,8 @@
 #define CATCH_CONFIG_MAIN
 
 #include <algorithm>
-#include "src/cs-iv-algorithm.h"
-#include "src/catch.hpp"
+#include "../src/cs-iv-algorithm.h"
+#include "../src/catch.hpp"
 
 TEST_CASE("Construction of object - default", "[Default Constructor]") {
     sortT testBox;

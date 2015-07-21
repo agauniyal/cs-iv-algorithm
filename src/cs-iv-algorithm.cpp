@@ -116,5 +116,3 @@ void sortT::printList() {
     }
     std::cout << std::endl;
 }
-
-void sortT::clearList() { list.clear(); }

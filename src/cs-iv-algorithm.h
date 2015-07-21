@@ -32,7 +32,6 @@ class sortT {
 
     void testWith(void sortF(std::vector<long long>::iterator,
                              std::vector<long long>::iterator));
-    void clearList();
     void printList();
     unsigned int getUpLim() { return upLim; }
 };

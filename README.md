@@ -1,13 +1,12 @@
 # BTECH CS SEM IV
 
+[![Build Status](https://travis-ci.org/agauniyal/cs-iv-algorithm.svg?branch=master)](https://travis-ci.org/agauniyal/cs-iv-algorithm)
+
 ####Build & Test Instructions:
 
 ```
-mkdir build
-cd build
-cmake .. 
-make
-./bin/test
+chmod +x build.sh
+./build.sh
 ```
 
 ####Include Instructions:

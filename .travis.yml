@@ -20,7 +20,7 @@ addons:
             - clang
 branches:
   only:
-      - travis-test
+      - master
 sudo: false
 os:
     - linux

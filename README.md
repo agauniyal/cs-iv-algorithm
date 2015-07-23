@@ -3,8 +3,11 @@
 ####Build & Test Instructions:
 
 ```
-g++ -std=c++11 src/*.cpp test/test.cpp -o a.out
-./a.out
+mkdir build
+cd build
+cmake .. 
+make
+./test
 ```
 
 ####Include Instructions:

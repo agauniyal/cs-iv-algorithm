@@ -18,23 +18,25 @@ addons:
             - gcc-4.8
             - g++-4.8
             - clang
+            - cmake
+
 branches:
-  only:
-      - master
+    only:
+        - master
 sudo: false
 os:
     - linux
     - osx
 
 env:
-  global:
-   - secure: "KEZXeAD0sRK7FqLp5qVwMdDcMFPUSVmE2HmfQODuBzJhm7WUL5HzKeIlvMGYHytwFsu/qbnON7f0UZ7V+aqbqwY8Rv1BykcqhIQOUmIryU82zDa/LzPtdEFChQEFfSEBEXLx3GDK1jOfnxwhfDvG78vV9Jga1u3Phy5inDDrP8yW+PMZiro/U6jKo7PZGUQgaP+HtJvlav4fnWHzC4/TJ4TMyxQaeeZdUlpHazMW50Ynv6FPH8YFsGqQb2jKrwb/m6brt0uncgjn+FRpJENxumdzyiJmlFeudcrHPvteY3pRG/zYqGyBHLB0EisdxYhPYP8MQ+jCS68VFiz78NrfLw1ki/PGW9A6LOIJ8W4pMlSovp/8J5WYb79pW35I81TZXQG9exWVN3VDAUOGCsWiRKaOsV9a8UQ4DYi2mNVGFDgik5gcHyVcUNFfAok2nbshF2urv7Cl73xyqzo1uh2/k+B7qTwQcoZxKVKIOqXKH/GH6W9T++VWRk76kpmeZLTSYcci+Tq8GZAozMTdoBXFgdTOADBJsQ+pW5dDIOsbPzLN3LHNjRKxAhlvjNpnr7RGrQYpjWueB7G7grnpFPBssrz5tnkjUN/wEb+mJHbcYYEea5wy/LJTUAzVfI9WbUPDenYBduyVU8kIj72aGq29h5uF8TpWh6uO1ARQgRJBMFI="
+    global:
+        - secure: "KEZXeAD0sRK7FqLp5qVwMdDcMFPUSVmE2HmfQODuBzJhm7WUL5HzKeIlvMGYHytwFsu/qbnON7f0UZ7V+aqbqwY8Rv1BykcqhIQOUmIryU82zDa/LzPtdEFChQEFfSEBEXLx3GDK1jOfnxwhfDvG78vV9Jga1u3Phy5inDDrP8yW+PMZiro/U6jKo7PZGUQgaP+HtJvlav4fnWHzC4/TJ4TMyxQaeeZdUlpHazMW50Ynv6FPH8YFsGqQb2jKrwb/m6brt0uncgjn+FRpJENxumdzyiJmlFeudcrHPvteY3pRG/zYqGyBHLB0EisdxYhPYP8MQ+jCS68VFiz78NrfLw1ki/PGW9A6LOIJ8W4pMlSovp/8J5WYb79pW35I81TZXQG9exWVN3VDAUOGCsWiRKaOsV9a8UQ4DYi2mNVGFDgik5gcHyVcUNFfAok2nbshF2urv7Cl73xyqzo1uh2/k+B7qTwQcoZxKVKIOqXKH/GH6W9T++VWRk76kpmeZLTSYcci+Tq8GZAozMTdoBXFgdTOADBJsQ+pW5dDIOsbPzLN3LHNjRKxAhlvjNpnr7RGrQYpjWueB7G7grnpFPBssrz5tnkjUN/wEb+mJHbcYYEea5wy/LJTUAzVfI9WbUPDenYBduyVU8kIj72aGq29h5uF8TpWh6uO1ARQgRJBMFI="
 
 addons:
-  coverity_scan:
-    project:
-      name: "agauniyal/cs-iv-algorithm"
-      description: "BTECH CS SEM IV"
+    coverity_scan:
+        project:
+            name: "agauniyal/cs-iv-algorithm"
+    description: "BTECH CS SEM IV"
     notification_email: agauniyal@outlook.com
     build_command_prepend: "chmod +x build.sh"
     build_command:   "./build.sh"

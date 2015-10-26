@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN
 
 #include <algorithm>
-#include "../src/cs-iv-algorithm.h"
+#include "cs-iv-algorithm.h"
 #include "catch.hpp"
 
 TEST_CASE("Construction of object - default", "[Default Constructor]") {

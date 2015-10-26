@@ -6,8 +6,18 @@
 
 ```
 chmod +x build.sh
-./build.sh
 ```
+
+Now for Release or Debug
+```
+./build.sh -DCMAKE_BUILD_TYPE=Release
+./build.sh -DCMAKE_BUILD_TYPE=Debug
+```
+
+To test, use `./build.sh -DCMAKE_BUILD_TYPE=Debug`. Two executables will be created, `sample` and `tests` inside
+`build/bin` directory. Run `tests` to confirm all tests are passing.
+
+---
 
 ####Include Instructions:
 

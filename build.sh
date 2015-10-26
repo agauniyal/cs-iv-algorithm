@@ -4,6 +4,5 @@ set -ex
 
 mkdir -p build
 cd build/
-cmake ..
+cmake "$1" ..
 make
-./bin/tests.o

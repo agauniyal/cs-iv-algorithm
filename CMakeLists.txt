@@ -8,8 +8,5 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 include_directories(include)
 set(SOURCES ${CMAKE_SOURCE_DIR}/src/cs-iv-algorithm.cpp)
 
-message("CMAKE_SOURCE_DIR is" ${CMAKE_SOURCE_DIR})
-message("SOURCES POINT TO" ${SOURCES})
-
 add_subdirectory(src)
 add_subdirectory(tests)

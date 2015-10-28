@@ -1,6 +1,7 @@
 # BTECH CS SEM IV
 
 [![Build Status](https://travis-ci.org/agauniyal/cs-iv-algorithm.svg?branch=master)](https://travis-ci.org/agauniyal/cs-iv-algorithm)
+[![Build status](https://ci.appveyor.com/api/projects/status/krmgl0by1i1xa87a/branch/master?svg=true)](https://ci.appveyor.com/project/agauniyal/cs-iv-algorithm/branch/master)
 
 ####Build & Test Instructions:
 

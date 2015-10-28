@@ -4,18 +4,10 @@ unsigned int sortT::findSentinel() {
 
     /*
      * Get numeric limit of long long
-     * normalize it by subtracting remainder
      * find out max upperlimit by clean divide of 10
     */
 
-    long long sentinel = std::numeric_limits<long long>::max();
-    sentinel = sentinel - (sentinel % 10);
-    unsigned int k = 0;
-    while (sentinel != 0) {
-        sentinel /= 10;
-        ++k;
-    }
-    return k;
+    return std::numeric_limits<long long>::digits10;
 }
 
 void sortT::seed() {

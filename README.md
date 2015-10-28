@@ -11,7 +11,7 @@ For linux/unix-like, a build.sh is already supplied with this repo. Use it like 
 chmod +x build.sh
 ```
 
-Now for Release or Debug
+Now for Release or Debug.
 ```
 ./build.sh -DCMAKE_BUILD_TYPE=Release
 ./build.sh -DCMAKE_BUILD_TYPE=Debug

@@ -30,8 +30,9 @@ class sortT {
     std::vector<std::tuple<std::chrono::microseconds, std::chrono::microseconds,
                            std::chrono::microseconds>> list;
 
-    void testWith(void sortF(std::vector<long long>::iterator,
-                             std::vector<long long>::iterator));
+    template<typename BinaryFunction>
+    void testWith(BinaryFunction sortF);
+    
     void printList();
     unsigned int getUpLim() { return upLim; }
 };

@@ -33,7 +33,7 @@ TEST_CASE("Construction of object - param & 100 UpLimit",
           "[UpLimit overflow Param Constructor]") {
     sortT testBox(100);
     long long sentinel = std::numeric_limits<long long>::max();
-    sentinel = sentinel - (sentinel % 10);
+    sentinel -= (sentinel % 10);
     unsigned int k = 0;
     while (sentinel != 0) {
         sentinel /= 10;
